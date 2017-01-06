@@ -1,5 +1,5 @@
 workflow:
-    - second_job
+    - second_job_name
 shared:
     image: node:6
 
@@ -8,6 +8,6 @@ jobs:
     main:
         steps:
             - hello: echo hi world
-    second_job:
+    second_job_name:
         steps:
             - myname: echo second_job
