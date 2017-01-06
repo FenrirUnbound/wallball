@@ -1,5 +1,5 @@
 workflow:
-    - second_job
+    - second_job_name
 shared:
     image: node:6
 
