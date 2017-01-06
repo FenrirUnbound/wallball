@@ -1,5 +1,8 @@
 workflow:
     - second_job
+shared:
+    image: node:6
+
 
 jobs:
     main:
