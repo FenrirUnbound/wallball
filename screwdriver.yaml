@@ -1,0 +1,10 @@
+workflow:
+    - second_job
+
+jobs:
+    main:
+        steps:
+            - hello: echo hi world
+    second_job:
+        steps:
+            - my_name: echo second_job
