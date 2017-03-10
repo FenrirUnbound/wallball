@@ -8,9 +8,9 @@ jobs:
     main:
         steps:
             - hello: echo hi world
-            - set: meta set coverage 99.52
-            - get: meta get coverage
+            - set: /opt/sd/meta set coverage 99.52
+            - get: /opt/sd/meta get coverage
     second_job_name:
         steps:
-            - fetch: meta get coverage
-            - reaching: meta get
+            - fetch: /opt/sd/meta get coverage
+            - reaching: /opt/sd/meta get
