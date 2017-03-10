@@ -1,7 +1,7 @@
 workflow:
     - second_job_name
 shared:
-    image: node:6
+    image: alpine:3.3
 
 
 jobs:
