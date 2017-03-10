@@ -8,6 +8,9 @@ jobs:
     main:
         steps:
             - hello: echo hi world
+            - set: meta set coverage 99.52
+            - get: meta get coverage
     second_job_name:
         steps:
-            - myname: echo second_job
+            - fetch: meta get coverage
+            - reaching: meta get
