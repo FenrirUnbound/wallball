@@ -1,5 +1,5 @@
 workflow:
-    - second_job_name
+    - deploy
 shared:
     image: node:6
 
@@ -8,9 +8,9 @@ jobs:
     main:
         steps:
             - hello: echo hi world
-            - set: /opt/sd/meta set coverage 99.52
-            - get: /opt/sd/meta get coverage
-    second_job_name:
+            - set_coverage: /opt/sd/meta set coverage 99.52
+            - get_coverage: /opt/sd/meta get coverage
+    deploy:
         steps:
-            - fetch: /opt/sd/meta get coverage
-            - reaching: /opt/sd/meta get
+            - check_coverage: /opt/sd/meta get coverage
+            - deploy_to_production: echo secret script here
