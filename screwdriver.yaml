@@ -1,6 +1,6 @@
 ---
 shared:
-    image: alpine:3.5
+    image: screwdrivercd/launcher:latest
 
 
 jobs:
