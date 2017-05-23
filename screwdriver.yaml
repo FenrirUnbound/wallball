@@ -1,6 +1,6 @@
 ---
 shared:
-    image: golang:alpine
+    image: screwdrivercd/launcher:latest
 
 
 jobs:
