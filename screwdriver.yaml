@@ -1,6 +1,6 @@
 ---
 shared:
-    image: screwdrivercd/launcher:latest
+    image: node:alpine
 
 
 jobs:
