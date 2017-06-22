@@ -8,4 +8,3 @@ jobs:
         description: Darren is awesome
         steps:
             - hello: echo hi world
-            - maybe: which asdfzxcvasdfqwer1234
