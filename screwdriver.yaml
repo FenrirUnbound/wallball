@@ -1,6 +1,6 @@
 ---
 shared:
-    image: screwdrivercd/launcher:latest
+    image: node:8
 
 
 jobs:
