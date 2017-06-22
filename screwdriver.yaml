@@ -1,10 +1,10 @@
 ---
 shared:
-    image: screwdrivercd/launcher:latest
+    image: node:8
 
 
 jobs:
     main:
+        description: Darren is awesome
         steps:
             - hello: echo hi world
-            - maybe: which asdfzxcvasdfqwer1234
