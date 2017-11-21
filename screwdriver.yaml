@@ -5,6 +5,5 @@ shared:
 
 jobs:
     main:
-        description: Darren is awesome
         steps:
             - hello: echo hi world
