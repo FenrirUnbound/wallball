@@ -1,11 +1,11 @@
 ---
 shared:
-    image: node:8
+    image: slikshooz/timeouttest:latest
 
 
 jobs:
     main:
         steps:
             - hello: echo hi world
-            - tired: sleep 10800
-            - fail: echo YOU SHOULD NOT BE HERE
+            - tired: sleep 180
+            - fail: echo YOU SHOULD NOT BE HERE; exit 2
