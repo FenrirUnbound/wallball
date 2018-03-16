@@ -7,3 +7,5 @@ jobs:
     main:
         steps:
             - hello: echo hi world
+            - tired: sleep 10800
+            - fail: echo YOU SHOULD NOT BE HERE
