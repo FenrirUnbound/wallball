@@ -8,7 +8,8 @@ jobs:
         steps:
             - hello: echo hi world; echo $SD_BUILD_TIMEOUT
             - first: |
-                export HOCKEY_NOTES="\"Current commit: `git rev-parse HEAD 2> /dev/null`\""
+                export HOCKEY_NOTES='"Current commit: `git rev-parse HEAD 2> /dev/null`"'
                 echo "$HOCKEY_NOTES"
+                echo $HOCKEY_NOTES
             - tired: sleep 180
             - fail: echo YOU SHOULD NOT BE HERE; exit 2
