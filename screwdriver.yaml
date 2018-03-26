@@ -8,5 +8,5 @@ jobs:
         requires: [ ~commit, ~pr ]
         steps:
             - hello: echo hi world; echo $SD_BUILD_TIMEOUT
-            - tired: sleep 120
+            - tired: sleep 6000
             - fail: echo YOU SHOULD NOT BE HERE; exit 2
