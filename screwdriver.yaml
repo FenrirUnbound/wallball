@@ -6,8 +6,6 @@ shared:
 jobs:
     main:
         requires: [ ~commit, ~pr ]
-        annotations:
-            beta.screwdriver.cd/timeout: 45
         steps:
             - hello: echo hi world; echo $SD_BUILD_TIMEOUT
             - tired: sleep 120
