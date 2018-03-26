@@ -5,6 +5,8 @@ shared:
 
 jobs:
     main:
+        annotations:
+            beta.screwdriver.cd/timeout: 1
         steps:
             - hello: echo hi world; echo $SD_BUILD_TIMEOUT
             - tired: sleep 180
