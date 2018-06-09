@@ -1,11 +1,11 @@
 ---
 shared:
-    image: slikshooz/timeouttest:latest
-
+  image: slikshooz/timeouttest:latest
 
 jobs:
-    main:
-        steps:
-            - hello: echo hi world; echo $SD_BUILD_TIMEOUT
-            - tired: sleep 180
-            - fail: echo YOU SHOULD NOT BE HERE; exit 2
+  main:
+    requires: [~pr, ~commit]
+    steps:
+    - hello: echo hi world; echo $SD_BUILD_TIMEOUT
+    - tired: sleep 180
+    - fail: echo YOU SHOULD NOT BE HERE; exit 2
