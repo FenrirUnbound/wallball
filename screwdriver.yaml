@@ -5,8 +5,8 @@ shared:
 jobs:
   main:
     annotations:
-      beta.screwdriver.cd/cpu: micro
-      beta.screwdriver.cd/ram: micro
+      beta.screwdriver.cd/cpu: MICRO
+      beta.screwdriver.cd/ram: MICRO
     requires: [~pr, ~commit]
     steps:
     - hello: echo hi world; echo $SD_BUILD_TIMEOUT
