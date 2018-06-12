@@ -7,8 +7,16 @@ jobs:
     annotations:
       beta.screwdriver.cd/cpu: MICRO
       beta.screwdriver.cd/ram: MICRO
-    requires: [~pr, ~commit]
+    requires: [~commit]
     steps:
     - hello: echo hi world; echo $SD_BUILD_TIMEOUT
     - tired: sleep 180
     - fail: echo YOU SHOULD NOT BE HERE; exit 2
+  npm:
+    annotations:
+      beta.screwdriver.cd/cpu: MICRO
+      beta.screwdriver.cd/ram: MICRO
+    image: node:8
+    requires: [~pr]
+    steps:
+    - install: npm install

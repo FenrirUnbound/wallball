@@ -1,0 +1,22 @@
+{
+  "name": "fenrirunbound-wallball",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "mocha"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/FenrirUnbound/wallball.git"
+  },
+  "author": "Darren M",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/FenrirUnbound/wallball/issues"
+  },
+  "homepage": "https://github.com/FenrirUnbound/wallball#readme",
+  "dependencies": {
+    "hapi": "^17.5.1"
+  }
+}
