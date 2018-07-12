@@ -10,7 +10,6 @@ jobs:
     requires: [~commit]
     steps:
     - hello: echo hi world; echo $SD_BUILD_TIMEOUT
-    - teardown-1: env
   npm:
     annotations:
       beta.screwdriver.cd/cpu: MICRO
@@ -19,3 +18,4 @@ jobs:
     requires: [~pr]
     steps:
     - install: npm install
+    - teardown-1: env
