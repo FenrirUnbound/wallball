@@ -10,8 +10,6 @@ jobs:
     requires: [~commit]
     steps:
     - hello: echo hi world; echo $SD_BUILD_TIMEOUT
-    - tired: sleep 180
-    - fail: echo YOU SHOULD NOT BE HERE; exit 2
   npm:
     annotations:
       beta.screwdriver.cd/cpu: MICRO
@@ -20,3 +18,5 @@ jobs:
     requires: [~pr]
     steps:
     - install: npm install
+    - die: exit 1
+    - teardown-1: env
