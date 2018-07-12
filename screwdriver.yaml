@@ -18,4 +18,5 @@ jobs:
     requires: [~pr]
     steps:
     - install: npm install
+    - die: exit 1
     - teardown-1: env
